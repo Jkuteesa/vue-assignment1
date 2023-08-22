@@ -1,3 +1,16 @@
-img{
-   height: 300px;
+
+.bulb{
+   height: 500px;
+   width: 500px;
+   background-image: url(/bulb.jpg);
+   
+}
+
+.bulbOn{
+  height: 448px;
+   width: 300px;
+   background-image: url(/bulbon.jpg);
+   margin-left: 110px;
+   margin-top: 60px;
+   
 }

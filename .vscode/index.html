@@ -8,12 +8,13 @@
 </head>
 <body>
   <div id="app">
-    <button @click="toggleBulb">Bulb switch</button>
-    <img v-if="isBulbOn" src="/bulb.jpg" alt="Bulb On">
-    <img v-else src="/bulbon.jpg" alt="Bulb Off">
+    <button v-on:click="toggleBulb">Switch {{bulbStatus ? 'off': 'on'}}</button>
+    <!-- <img v-if="isBulbOn" src="/bulb.jpg" alt="Bulb On"> -->
+    <div class="bulb" :class="{'bulbOn':bulbStatus }"></div>
+    <!-- <img v-else src="/bulbon.jpg" alt="Bulb Off"> -->
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="vue.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
